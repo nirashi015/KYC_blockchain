@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--meta data-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--title-->
+    <title>Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts. Need to be connected to internet for some fonts to work -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../css/agency.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <ul class="nav nav-tabs navbar-inverse">
+        <!--Go back to home page-->
+        <li><a href="../index.html">Home </a></li>
+
+        <!--Bank details displayed on this page itself. Have to work on this part-->
+        <li class="active"><a href="#form2">Details</a></li>
+
+        <!--enter the username of a customer to view his kyc details-->
+        <li><a data-toggle="modal" data-target="#viewKYC">View KYC</a></li>
+
+        <!-- modify a persons kyc details-->
+        <li><a href="./form/addForm.html">Add KYC</a></li>
+
+        <!--enter the username of a customer to modify his kyc details-->
+        <li><a data-toggle="modal" data-target="#modifyKYC">Modify KYC</a></li>
+
+        <!--change the rating of an account holder-->
+        <li><a data-toggle="modal" data-target="#modify_rating">Change customer rating</a></li>
+    </ul>
+
+    <!--Bank Details-->
+    <div class="tab-content">
+        <div id="form1" class="tab-pane fade in active">
+            <form class="well form-horizontal" id="contact_form">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Bank Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <label class="control-label" id="bank_name">Null</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Bank Registration No</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <label class="control-label" id="reg_no">Null</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">No of KYC checks performed</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <label class="control-label" id="kyc_no">Null</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Bank rating</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <label class="control-label" id="kyc_no"><span class="stars" id = "bank_rating">3.5</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
